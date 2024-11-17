@@ -2,54 +2,72 @@
 "a" = (
 /turf/open/floor/iron,
 /area/shuttle)
-"j" = (
+"l" = (
+/obj/effect/landmark{
+	name = "Ottoman Portal Entrance"
+	},
+/turf/open/floor/iron,
+/area/shuttle)
+"q" = (
 /turf/closed/wall/mineral/titanium,
 /area/shuttle)
-"H" = (
+"B" = (
+/obj/effect/landmark{
+	name = "Ottoman Portal Exit"
+	},
+/turf/open/floor/iron,
+/area/shuttle)
+"O" = (
+/obj/item/banner/red,
+/turf/open/floor/iron,
+/area/shuttle)
+"P" = (
+/obj/effect/landmark{
+	name = "Janissary Maker"
+	},
+/turf/open/floor/iron,
+/area/shuttle)
+"S" = (
 /obj/effect/landmark/start{
 	name = "Ottoman Raider"
 	},
 /turf/open/floor/iron,
 /area/shuttle)
-"N" = (
-/obj/item/banner/red,
-/turf/open/floor/iron,
-/area/shuttle)
 
 (1,1,1) = {"
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
 "}
 (2,1,1) = {"
-j
+q
 a
 a
 a
@@ -78,10 +96,10 @@ a
 a
 a
 a
-j
+q
 "}
 (3,1,1) = {"
-j
+q
 a
 a
 a
@@ -110,10 +128,10 @@ a
 a
 a
 a
-j
+q
 "}
 (4,1,1) = {"
-j
+q
 a
 a
 a
@@ -129,10 +147,10 @@ a
 a
 a
 a
-N
-N
-N
-N
+O
+O
+O
+O
 a
 a
 a
@@ -142,10 +160,10 @@ a
 a
 a
 a
-j
+q
 "}
 (5,1,1) = {"
-j
+q
 a
 a
 a
@@ -161,10 +179,10 @@ a
 a
 a
 a
-N
-N
-N
-N
+O
+O
+O
+O
 a
 a
 a
@@ -174,10 +192,10 @@ a
 a
 a
 a
-j
+q
 "}
 (6,1,1) = {"
-j
+q
 a
 a
 a
@@ -193,10 +211,10 @@ a
 a
 a
 a
-N
-N
-N
-N
+O
+O
+O
+O
 a
 a
 a
@@ -206,10 +224,10 @@ a
 a
 a
 a
-j
+q
 "}
 (7,1,1) = {"
-j
+q
 a
 a
 a
@@ -238,10 +256,10 @@ a
 a
 a
 a
-j
+q
 "}
 (8,1,1) = {"
-j
+q
 a
 a
 a
@@ -270,24 +288,17 @@ a
 a
 a
 a
-j
+q
 "}
 (9,1,1) = {"
-j
+q
 a
 a
 a
 a
 a
 a
-N
-a
-a
-a
-a
-a
-a
-a
+O
 a
 a
 a
@@ -296,16 +307,23 @@ a
 a
 a
 a
+l
 a
 a
 a
 a
 a
 a
-j
+a
+a
+a
+a
+a
+a
+q
 "}
 (10,1,1) = {"
-j
+q
 a
 a
 a
@@ -334,10 +352,10 @@ a
 a
 a
 a
-j
+q
 "}
 (11,1,1) = {"
-j
+q
 a
 a
 a
@@ -353,6 +371,7 @@ a
 a
 a
 a
+P
 a
 a
 a
@@ -365,11 +384,10 @@ a
 a
 a
 a
-a
-j
+q
 "}
 (12,1,1) = {"
-j
+q
 a
 a
 a
@@ -398,10 +416,10 @@ a
 a
 a
 a
-j
+q
 "}
 (13,1,1) = {"
-j
+q
 a
 a
 a
@@ -412,7 +430,12 @@ a
 a
 a
 a
-H
+S
+a
+a
+a
+a
+B
 a
 a
 a
@@ -425,15 +448,10 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-j
+q
 "}
 (14,1,1) = {"
-j
+q
 a
 a
 a
@@ -444,7 +462,7 @@ a
 a
 a
 a
-H
+S
 a
 a
 a
@@ -462,10 +480,10 @@ a
 a
 a
 a
-j
+q
 "}
 (15,1,1) = {"
-j
+q
 a
 a
 a
@@ -476,15 +494,11 @@ a
 a
 a
 a
-H
+S
 a
 a
 a
-N
-a
-a
-a
-a
+O
 a
 a
 a
@@ -494,10 +508,14 @@ a
 a
 a
 a
-j
+a
+a
+a
+a
+q
 "}
 (16,1,1) = {"
-j
+q
 a
 a
 a
@@ -508,7 +526,7 @@ a
 a
 a
 a
-H
+S
 a
 a
 a
@@ -526,10 +544,10 @@ a
 a
 a
 a
-j
+q
 "}
 (17,1,1) = {"
-j
+q
 a
 a
 a
@@ -540,7 +558,7 @@ a
 a
 a
 a
-H
+S
 a
 a
 a
@@ -551,17 +569,17 @@ a
 a
 a
 a
-N
+O
 a
 a
 a
 a
 a
 a
-j
+q
 "}
 (18,1,1) = {"
-j
+q
 a
 a
 a
@@ -590,10 +608,10 @@ a
 a
 a
 a
-j
+q
 "}
 (19,1,1) = {"
-j
+q
 a
 a
 a
@@ -622,22 +640,16 @@ a
 a
 a
 a
-j
+q
 "}
 (20,1,1) = {"
-j
+q
 a
 a
 a
 a
 a
-N
-a
-a
-a
-a
-a
-a
+O
 a
 a
 a
@@ -654,27 +666,27 @@ a
 a
 a
 a
-j
+a
+a
+a
+a
+a
+a
+q
 "}
 (21,1,1) = {"
-j
+q
 a
 a
 a
 a
 a
-N
+O
 a
 a
 a
 a
-N
-a
-a
-a
-a
-a
-a
+O
 a
 a
 a
@@ -686,10 +698,16 @@ a
 a
 a
 a
-j
+a
+a
+a
+a
+a
+a
+q
 "}
 (22,1,1) = {"
-j
+q
 a
 a
 a
@@ -718,10 +736,10 @@ a
 a
 a
 a
-j
+q
 "}
 (23,1,1) = {"
-j
+q
 a
 a
 a
@@ -744,16 +762,16 @@ a
 a
 a
 a
-N
+O
 a
 a
 a
 a
 a
-j
+q
 "}
 (24,1,1) = {"
-j
+q
 a
 a
 a
@@ -782,10 +800,10 @@ a
 a
 a
 a
-j
+q
 "}
 (25,1,1) = {"
-j
+q
 a
 a
 a
@@ -814,10 +832,10 @@ a
 a
 a
 a
-j
+q
 "}
 (26,1,1) = {"
-j
+q
 a
 a
 a
@@ -846,10 +864,10 @@ a
 a
 a
 a
-j
+q
 "}
 (27,1,1) = {"
-j
+q
 a
 a
 a
@@ -878,10 +896,10 @@ a
 a
 a
 a
-j
+q
 "}
 (28,1,1) = {"
-j
+q
 a
 a
 a
@@ -910,10 +928,10 @@ a
 a
 a
 a
-j
+q
 "}
 (29,1,1) = {"
-j
+q
 a
 a
 a
@@ -942,37 +960,37 @@ a
 a
 a
 a
-j
+q
 "}
 (30,1,1) = {"
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
-j
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
 "}
