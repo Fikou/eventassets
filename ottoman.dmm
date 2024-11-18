@@ -1,996 +1,1187 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"a" = (
-/turf/open/floor/iron,
+"aU" = (
+/turf/open/floor/mineral/silver,
 /area/shuttle)
-"l" = (
-/obj/effect/landmark{
-	name = "Ottoman Portal Entrance"
-	},
-/turf/open/floor/iron,
+"bv" = (
+/obj/structure/rack,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/apple,
+/turf/open/floor/iron/dark,
 /area/shuttle)
-"q" = (
-/turf/closed/wall/mineral/titanium,
-/area/shuttle)
-"B" = (
-/obj/effect/landmark{
-	name = "Ottoman Portal Exit"
-	},
-/turf/open/floor/iron,
-/area/shuttle)
-"O" = (
-/obj/item/banner/red,
-/turf/open/floor/iron,
-/area/shuttle)
-"P" = (
+"bx" = (
 /obj/effect/landmark{
 	name = "Janissary Maker"
 	},
-/turf/open/floor/iron,
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
-"S" = (
+"cQ" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/spawner/random/vending/snackvend,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"db" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/wrapping,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"dk" = (
 /obj/effect/landmark/start{
 	name = "Ottoman Raider"
 	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"dl" = (
+/obj/machinery/door/airlock/external{
+	name = "Ottoman Imperial Shuttle";
+	req_access = list("maint_tunnels")
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/docking_port/mobile{
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	shuttle_id = "ottoman";
+	name = "imperial shuttle"
+	},
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"do" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/trash/chips,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"dX" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"ej" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/effect/decal/cleanable/plasma,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"em" = (
+/turf/open/floor/carpet/lone{
+	dir = 4
+	},
+/area/shuttle)
+"ey" = (
+/obj/structure/displaycase/trophy,
+/obj/structure/window/bronze/spawner/directional/east,
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"eS" = (
+/obj/machinery/door/airlock/bronze/seethru{
+	req_access = list("cent_captain")
+	},
+/turf/open/floor/carpet,
+/area/shuttle)
+"fz" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"fG" = (
+/obj/structure/statue/sandstone/venus{
+	dir = 1;
+	pixel_x = 3
+	},
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"fX" = (
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/fuel_pool,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"gd" = (
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_y = 12;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_x = 3;
+	pixel_y = -9
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"go" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"gF" = (
+/obj/structure/statue/sandstone/venus{
+	pixel_x = -4
+	},
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"gH" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"he" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Janissary Chambers"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"hE" = (
+/obj/machinery/computer/camera_advanced/syndie,
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"hS" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/item/storage/toolbox/mechanical,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"hU" = (
+/obj/structure/table/wood/fancy/red,
+/obj/item/food/pie/baklava{
+	pixel_y = 13;
+	pixel_x = -4
+	},
+/obj/item/food/meat/steak/chicken{
+	pixel_x = 6;
+	pixel_y = 1
+	},
+/obj/item/food/fishmeat/fish_tail{
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/machinery/light/floor,
+/obj/structure/window/bronze/spawner/directional/west,
+/turf/open/floor/carpet,
+/area/shuttle)
+"kN" = (
+/obj/structure/rack,
+/obj/item/storage/medkit/toxin,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"lG" = (
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"lS" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"lW" = (
+/obj/machinery/computer/shuttle{
+	shuttleId = "ottoman";
+	req_access = list("cent_captain");
+	interaction_flags_machine = 0;
+	possible_destinations = "ottoman_custom"
+	},
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"me" = (
+/obj/machinery/vending/wallmed/directional/east,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"mF" = (
+/obj/item/stack/cannonball/fourteen,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"mL" = (
+/obj/effect/decal/cleanable/shreds,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"mT" = (
+/obj/structure{
+	anchored = 1;
+	resistance_flags = 115;
+	icon = 'icons/obj/machines/telepad.dmi';
+	icon_state = "botpad";
+	name = "portal receiver";
+	pixel_y = -6
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"nB" = (
+/obj/machinery/light/directional/east,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/structure/rack,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"os" = (
+/turf/open/floor/carpet,
+/area/shuttle)
+"ot" = (
+/obj/structure/rack,
+/obj/item/storage/medkit/fire,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"ov" = (
+/obj/structure/bed/maint,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"pZ" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/landmark/start{
+	name = "Ottoman Raider"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"rt" = (
+/obj/machinery/door/airlock/external{
+	name = "Ottoman Imperial Shuttle";
+	req_access = list("maint_tunnels")
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"sf" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle)
+"sh" = (
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"sW" = (
+/obj/structure/bed/maint,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"sX" = (
+/mob/living/basic/pony{
+	dir = 8;
+	name = "Duldul";
+	health = 300;
+	maxHealth = 300;
+	ponycolors = list("#d0cecc","#353841")
+	},
+/turf/open/floor/carpet/lone{
+	dir = 4
+	},
+/area/shuttle)
+"tc" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/engineering_welding,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"tU" = (
+/obj/item/storage/backpack/duffelbag/sec/surgery{
+	pixel_y = 4
+	},
+/obj/structure/table/reinforced/rglass,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"us" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"uJ" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Recovery Bay"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"vQ" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/structure/reagent_dispensers/watertank/high,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"wP" = (
+/obj/machinery/light/floor,
+/obj/effect/decal/cleanable/vomit/old,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"wT" = (
+/obj/machinery/light/directional/west,
+/obj/structure/rack,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"wV" = (
+/obj/structure/statue/bone/rib{
+	dir = 1;
+	pixel_y = 10;
+	pixel_x = 2
+	},
+/turf/open/floor/iron/recharge_floor,
+/area/shuttle)
+"xj" = (
+/obj/machinery/door/airlock/multi_tile/public/glass,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"xy" = (
+/turf/template_noop,
+/area/template_noop)
+"xE" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"xO" = (
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"xS" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"yh" = (
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
+/area/shuttle)
+"yn" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"yx" = (
+/obj/structure/rack,
+/obj/item/storage/medkit/brute,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"Au" = (
+/obj/structure/bed/maint,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"Ci" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"Cm" = (
+/obj/structure/table/optable,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"CW" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/landmark/start{
+	name = "Ottoman Raider"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"Dm" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"Dt" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"DE" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker{
+	shuttleId = "ottoman";
+	shuttlePortId = "ottoman_custom";
+	jump_to_ports = list("whiteship_away" = 1);
+	view_range = 10
+	},
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"DS" = (
+/obj/structure{
+	anchored = 1;
+	resistance_flags = 115;
+	icon = 'icons/obj/machines/telepad.dmi';
+	icon_state = "botpad";
+	name = "portal receiver";
+	pixel_x = 5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Ey" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/storage/fancy/cigarettes/cigars/cohiba{
+	pixel_y = 5
+	},
+/obj/item/lighter{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka{
+	pixel_x = -9;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_y = 15
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"EU" = (
+/turf/open/floor/iron,
+/area/shuttle)
+"Fn" = (
+/obj/structure/fermenting_barrel/gunpowder,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"Fr" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"FT" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"Hl" = (
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"IG" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/item/stack/sheet/glass/fifty,
+/obj/structure/rack,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"Jt" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/decal/cleanable/fuel_pool,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"JK" = (
+/obj/structure/rack,
+/obj/item/binoculars,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"JX" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst,
+/turf/open/floor/plating/airless,
+/area/shuttle)
+"Kz" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"KL" = (
+/obj/machinery/computer/camera_advanced/syndie,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"La" = (
+/obj/machinery/door/airlock/shuttle/glass,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Li" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/item/stack/sheet/iron/fifty,
+/obj/structure/rack,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"Lu" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle)
+"LI" = (
+/obj/machinery/power/shuttle_engine/heater,
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle)
+"Ma" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/decal/cleanable/fuel_pool,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"MX" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Np" = (
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"NH" = (
+/obj/structure/window/bronze/spawner/directional/east,
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"Ou" = (
+/obj/structure/cannon{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"OJ" = (
+/obj/structure/window/bronze/spawner/directional/west,
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"Px" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/light/directional/east,
+/obj/item/trash/can,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"Ro" = (
+/obj/structure/statue/bone/rib{
+	pixel_y = 10;
+	pixel_x = -3
+	},
+/turf/open/floor/iron/recharge_floor,
+/area/shuttle)
+"Rp" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle)
+"RN" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"Sj" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"Sl" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"Sm" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron,
+/area/shuttle)
+"So" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 4
+	},
+/obj/structure/tank_holder/extinguisher,
+/turf/open/floor/mineral/titanium,
+/area/shuttle)
+"Sx" = (
+/obj/structure/weightmachine,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"SC" = (
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"Ti" = (
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"Un" = (
+/obj/effect/landmark{
+	name = "Ottoman Portal Exit"
+	},
+/obj/structure{
+	anchored = 1;
+	resistance_flags = 115;
+	icon = 'icons/obj/machines/telepad.dmi';
+	icon_state = "mechpad";
+	name = "portal receiver"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"UY" = (
+/obj/structure{
+	anchored = 1;
+	resistance_flags = 115;
+	icon = 'icons/obj/machines/telepad.dmi';
+	icon_state = "botpad";
+	name = "portal receiver";
+	pixel_y = 6
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Vt" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Vx" = (
+/obj/structure/displaycase/trophy,
+/obj/structure/window/bronze/spawner/directional/west,
+/turf/open/floor/mineral/silver,
+/area/shuttle)
+"VJ" = (
+/obj/machinery/door/airlock/silver{
+	name = "Sultan's Chamber";
+	req_access = list("maint_tunnels")
+	},
+/turf/open/floor/carpet,
+/area/shuttle)
+"VT" = (
+/obj/structure/chair/bronze,
+/obj/effect/landmark{
+	name = "Ottoman Sultan"
+	},
+/turf/open/floor/carpet,
+/area/shuttle)
+"WA" = (
+/obj/effect/landmark{
+	name = "Ottoman Portal Entrance"
+	},
+/turf/open/floor/circuit/red/off,
+/area/shuttle)
+"Xu" = (
+/obj/structure/rack,
+/obj/item/multitool{
+	pixel_x = -8
+	},
+/obj/item/book/bible{
+	pixel_x = 4;
+	name = "Quran";
+	icon_state = "koran";
+	inhand_icon_state = "koran";
+	deity_name = "Allah"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Xz" = (
+/obj/structure{
+	anchored = 1;
+	resistance_flags = 115;
+	icon = 'icons/obj/machines/telepad.dmi';
+	icon_state = "botpad";
+	name = "portal receiver";
+	pixel_x = -5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"XI" = (
+/obj/structure/punching_bag,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"XJ" = (
+/obj/structure/weightmachine/weightlifter,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Yi" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/spawner/random/vending/colavend,
+/turf/open/floor/iron/dark,
+/area/shuttle)
+"Yq" = (
+/obj/structure/table/wood/fancy/red,
+/obj/item/knife{
+	pixel_x = -9
+	},
+/obj/item/kitchen/spoon{
+	pixel_x = -3
+	},
+/obj/item/kitchen/fork{
+	pixel_x = 5;
+	pixel_y = 1
+	},
+/turf/open/floor/carpet,
+/area/shuttle)
+"YX" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Raider Chambers"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Zr" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"ZE" = (
+/obj/structure/rack,
+/obj/item/storage/medkit/o2,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle)
 
 (1,1,1) = {"
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+sf
+sf
+sf
+sf
+sf
+sf
+Lu
+Lu
 "}
 (2,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+xy
+sf
+sf
+sf
+sf
+sf
+sf
+sf
+xy
+sf
+Dt
+xS
+Sj
+hS
+So
+LI
+JX
 "}
 (3,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+sf
+sf
+ov
+CW
+do
+CW
+sW
+sf
+sf
+sf
+Dm
+sh
+Np
+sh
+vQ
+LI
+JX
 "}
 (4,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-O
-O
-O
-O
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+sf
+Xu
+db
+Zr
+Zr
+Zr
+Zr
+YX
+Kz
+xj
+Dm
+Np
+WA
+Np
+IG
+LI
+JX
 "}
 (5,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-O
-O
-O
-O
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+sf
+MX
+fz
+Zr
+mL
+Zr
+Zr
+Np
+Np
+Np
+Jt
+sh
+Np
+sh
+Li
+LI
+JX
 "}
 (6,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-O
-O
-O
-O
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+sf
+sf
+sf
+sf
+sf
+JK
+Au
+pZ
+Px
+dk
+sW
+sf
+Np
+sf
+tc
+Ma
+fX
+lS
+ej
+LI
+JX
 "}
 (7,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+sf
+sf
+ey
+NH
+gF
+sf
+sf
+sf
+sf
+sf
+sf
+sf
+sf
+La
+sf
+sf
+sf
+sf
+sf
+Lu
+Lu
+Lu
 "}
 (8,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+sf
+DE
+em
+eS
+em
+aU
+sf
+wV
+EU
+wV
+Sm
+wV
+Yi
+xO
+RN
+wT
+RN
+Ou
+Ou
+Lu
+SC
+Lu
 "}
 (9,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-O
-a
-a
-a
-a
-a
-a
-a
-a
-l
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+sf
+lW
+VT
+hU
+os
+os
+VJ
+os
+os
+os
+os
+os
+us
+em
+xO
+xO
+xO
+xO
+xO
+rt
+Ti
+dl
 "}
 (10,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+sf
+hE
+sX
+Yq
+em
+aU
+sf
+Ro
+EU
+Ro
+yh
+Ro
+cQ
+xO
+bv
+nB
+gd
+mF
+Fn
+Lu
+Sl
+Lu
 "}
 (11,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-P
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+sf
+sf
+Vx
+OJ
+fG
+sf
+sf
+sf
+sf
+sf
+sf
+sf
+sf
+La
+sf
+sf
+sf
+sf
+sf
+Lu
+Lu
+Lu
 "}
 (12,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+sf
+sf
+sf
+sf
+sf
+lG
+bx
+yn
+FT
+bx
+yn
+sf
+Np
+sf
+kN
+xE
+Hl
+xE
+ot
+LI
+JX
 "}
 (13,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-S
-a
-a
-a
-a
-B
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+sf
+lG
+lG
+lG
+lG
+lG
+lG
+he
+Np
+uJ
+dX
+sh
+DS
+sh
+yx
+LI
+JX
 "}
 (14,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-S
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+sf
+KL
+go
+Ey
+gH
+Fr
+Fr
+Np
+Vt
+Np
+dX
+mT
+Un
+UY
+tU
+LI
+JX
 "}
 (15,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-S
-a
-a
-a
-O
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+sf
+sf
+Sx
+Np
+XI
+Np
+XJ
+sf
+sf
+sf
+dX
+wP
+Xz
+sh
+Cm
+LI
+JX
 "}
 (16,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-S
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
+xy
+xy
+xy
+xy
+xy
+xy
+sf
+sf
+sf
+sf
+sf
+sf
+sf
+xy
+sf
+ZE
+Ci
+Ci
+me
+Rp
+LI
+JX
 "}
 (17,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-S
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-O
-a
-a
-a
-a
-a
-a
-q
-"}
-(18,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(19,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(20,1,1) = {"
-q
-a
-a
-a
-a
-a
-O
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(21,1,1) = {"
-q
-a
-a
-a
-a
-a
-O
-a
-a
-a
-a
-O
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(22,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(23,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-O
-a
-a
-a
-a
-a
-q
-"}
-(24,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(25,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(26,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(27,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(28,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(29,1,1) = {"
-q
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-q
-"}
-(30,1,1) = {"
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
-q
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+xy
+sf
+sf
+sf
+sf
+sf
+sf
+Lu
+Lu
 "}
