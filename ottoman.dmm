@@ -72,6 +72,7 @@
 /obj/machinery/door/airlock/titanium/glass{
 	name = "Recovery Bay"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "bB" = (
@@ -237,7 +238,10 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "lI" = (
-/obj/machinery/power/smes/full,
+/obj/machinery/power/smes/full{
+	output_level = 0;
+	input_level = 200000
+	},
 /obj/structure/cable,
 /turf/open/floor/mineral/silver,
 /area/shuttle)
@@ -304,6 +308,7 @@
 /obj/machinery/door/airlock/titanium/glass{
 	name = "Raiding Bay"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "qC" = (
@@ -442,6 +447,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "uy" = (
@@ -680,6 +686,7 @@
 /obj/machinery/door/airlock/titanium/glass{
 	name = "Raider Chambers"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "BX" = (
@@ -852,10 +859,10 @@
 /area/template_noop)
 "IA" = (
 /obj/machinery/door/airlock/silver{
-	name = "Sultan's Chamber";
-	req_access = list("maint_tunnels")
+	name = "Sultan's Chamber"
 	},
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/mineral/silver,
 /area/shuttle)
 "Jb" = (
@@ -1088,6 +1095,7 @@
 /obj/machinery/door/airlock/titanium/glass{
 	name = "Janissary Chambers"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "SQ" = (
@@ -1209,9 +1217,10 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker{
 	shuttleId = "ottoman";
 	shuttlePortId = "ottoman_custom";
-	jump_to_ports = list("whiteship_away" = 1);
-	view_range = 10;
-	dir = 4
+	jump_to_ports = list("arrival_stationary");
+	view_range = 5;
+	dir = 4;
+	y_offset = 10
 	},
 /obj/structure/cable,
 /turf/open/floor/carpet/red,
