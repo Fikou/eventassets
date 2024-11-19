@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ad" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/turf/open/floor/plating,
+/obj/structure/punching_bag,
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "aA" = (
 /obj/structure/railing{
@@ -13,56 +13,74 @@
 /obj/item/stack/cannonball/fourteen,
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
-"aJ" = (
-/obj/effect/turf_decal/tile/red,
+"aC" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/tank_dispenser/oxygen,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/mineral/titanium/tiled,
+/area/shuttle)
+"aJ" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/cannon{
+	dir = 4
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "aP" = (
 /obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"bq" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
-/obj/machinery/vending/wallmed/directional/west,
-/obj/effect/decal/cleanable/blood/old,
-/obj/item/defibrillator/loaded,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"bt" = (
-/obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_x = 7;
+	pixel_y = -5
 	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/spawner/random/vending/snackvend,
-/obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"bB" = (
-/obj/effect/turf_decal/tile/red,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"bK" = (
-/obj/machinery/telecomms/allinone/indestructible,
+"aR" = (
+/mob/living/basic/pony{
+	dir = 8;
+	name = "Duldul";
+	health = 300;
+	maxHealth = 300;
+	ponycolors = list("#d0cecc","#353841")
+	},
+/obj/machinery/door/window/survival_pod/left/directional/west{
+	req_access = list("cent_captain")
+	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/lone{
 	dir = 4
 	},
+/area/shuttle)
+"bq" = (
+/obj/structure/cable,
+/obj/structure/cable,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle)
+"bt" = (
+/obj/machinery/door/airlock/titanium/glass{
+	name = "Recovery Bay"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"bB" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/microwave,
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "bX" = (
 /obj/effect/turf_decal/tile/red{
@@ -73,16 +91,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"cR" = (
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
 "df" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 8
@@ -90,7 +98,14 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
 "dR" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "ei" = (
 /obj/structure/reagent_dispensers/plumbed/fuel,
@@ -101,6 +116,7 @@
 /obj/machinery/coffeemaker/impressa{
 	pixel_y = 5
 	},
+/obj/structure/cable,
 /turf/open/floor/carpet/red,
 /area/shuttle)
 "fW" = (
@@ -127,28 +143,24 @@
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
-"hT" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+"ho" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/wrapping,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
-"id" = (
-/mob/living/basic/pony{
-	dir = 8;
-	name = "Duldul";
-	health = 300;
-	maxHealth = 300;
-	ponycolors = list("#d0cecc","#353841")
-	},
-/obj/machinery/door/window/survival_pod/left/directional/west{
-	req_access = list("cent_captain")
-	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/carpet/lone{
+"ig" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/tank_holder/extinguisher,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "in" = (
 /obj/effect/decal/cleanable/shreds,
@@ -157,25 +169,61 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
-"kI" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark,
+"iC" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/machinery/vending/wallmed/directional/west,
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/defibrillator/loaded,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
+"jt" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"jU" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/engineering_welding{
+	req_access = list()
+	},
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"kI" = (
+/obj/item/storage/fancy/cigarettes/cigars/cohiba{
+	pixel_y = 5
+	},
+/obj/item/lighter{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_y = 15
+	},
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/computer/security/telescreen/entertainment/directional/west,
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
 "lj" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle)
-"ly" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
+"lA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/binoculars{
+	pixel_y = 4
 	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/titanium/tiled,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
 "lF" = (
 /obj/effect/turf_decal/tile/red{
@@ -187,57 +235,40 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "lI" = (
+/obj/machinery/power/smes/full,
 /obj/structure/cable,
-/obj/machinery/power/rtg{
-	power_gen = 10000
-	},
 /turf/open/floor/mineral/silver,
 /area/shuttle)
-"lW" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/storage/box/donkpockets{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/turf/open/floor/mineral/titanium/tiled/purple,
-/area/shuttle)
 "ni" = (
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"nn" = (
-/obj/structure/bed/maint,
-/turf/open/floor/mineral/plastitanium,
+/obj/machinery/telecomms/allinone/indestructible{
+	syndicate = 1
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/carpet/lone{
+	dir = 4
+	},
 /area/shuttle)
 "ob" = (
-/turf/open/floor/glass,
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/structure/cable,
+/turf/open/floor/plating,
 /area/shuttle)
-"oM" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/red,
+"oB" = (
+/obj/structure/weightmachine,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"oR" = (
-/obj/structure/railing/corner/end/flip,
-/turf/open/floor/mineral/titanium/tiled,
+"oG" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "pd" = (
 /turf/open/floor/mineral/silver,
 /area/shuttle)
 "pO" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/machinery/fishing_portal_generator/full,
-/turf/open/floor/mineral/plastitanium,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "pT" = (
 /turf/open/floor/iron/stairs/right,
@@ -274,22 +305,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "qC" = (
-/obj/item/reagent_containers/cup/bottle/welding_fuel{
-	pixel_y = 8;
-	pixel_x = 10
+/obj/item/statuebust/hippocratic{
+	anchored = 1;
+	density = 1
 	},
-/obj/effect/decal/cleanable/fuel_pool,
-/turf/open/floor/mineral/titanium/tiled/yellow,
-/area/shuttle)
-"ra" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/item/reagent_containers/cup/bucket/wooden{
-	pixel_x = 7;
-	pixel_y = -5
-	},
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
+/turf/open/floor/mineral/silver,
 /area/shuttle)
 "rL" = (
 /turf/closed/wall/mineral/titanium,
@@ -306,46 +327,20 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "sn" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/titanium/tiled/purple,
-/area/shuttle)
-"sz" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/obj/effect/landmark/start{
-	name = "Ottoman Raider"
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"sA" = (
-/obj/structure/railing{
+/obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/structure/tank_dispenser/oxygen,
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "sG" = (
 /turf/open/floor/iron/stairs/left,
 /area/shuttle)
 "sW" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"ta" = (
-/obj/effect/decal/cleanable/glass,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/railing/corner/end/flip,
+/turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "tb" = (
 /obj/effect/turf_decal/tile/red{
@@ -354,10 +349,8 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/structure/rack,
-/obj/item/storage/toolbox/ammobox/strilka310,
-/obj/item/storage/toolbox/ammobox/strilka310,
-/obj/item/storage/toolbox/ammobox/strilka310,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/spawner/random/vending/colavend,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "tr" = (
@@ -373,19 +366,31 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "ts" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/binoculars{
-	pixel_y = 4
+/obj/machinery/door/window/survival_pod/left/directional/west{
+	req_access = list("cent_captain");
+	dir = 4
 	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/mineral/plastitanium/red,
+/obj/structure/rack,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/machinery/light/directional/west,
+/turf/open/floor/carpet/lone{
+	dir = 4
+	},
 /area/shuttle)
 "tu" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark,
-/turf/open/floor/mineral/titanium/tiled/purple,
-/area/shuttle)
-"tP" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
@@ -405,6 +410,10 @@
 /obj/item/fishing_rod/telescopic,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
+"tP" = (
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
 "ui" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -414,103 +423,40 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "uv" = (
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
+/obj/machinery/door/airlock/titanium/glass{
+	name = "Sultan's Chamber"
 	},
+/obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/tank_holder/extinguisher,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "uy" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 4
+/obj/machinery/door/poddoor/shutters{
+	name = "Operation Shutters";
+	id = "ottoman"
 	},
-/turf/open/floor/mineral/titanium/tiled/purple,
+/obj/structure/holosign/barrier/atmos/sturdy,
+/obj/docking_port/mobile{
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	shuttle_id = "ottoman";
+	name = "imperial shuttle"
+	},
+/turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "uO" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/structure/cable,
-/turf/open/floor/plating,
+/obj/machinery/power/shuttle_engine/propulsion/burst/left,
+/turf/open/floor/plating/airless,
 /area/shuttle)
 "uQ" = (
 /obj/machinery/computer/camera_advanced/syndie{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/carpet/red,
 /area/shuttle)
 "uS" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/structure/rack,
-/obj/item/storage/toolbox/ammobox/strilka310,
-/obj/item/storage/toolbox/ammobox/strilka310,
-/obj/item/storage/toolbox/ammobox/strilka310,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"uY" = (
-/obj/machinery/door/airlock/titanium/glass{
-	name = "Recovery Bay"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"vL" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/effect/landmark/start{
-	name = "Ottoman Raider"
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"vU" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/effect/spawner/random/vending/colavend,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"wo" = (
-/obj/effect/landmark{
-	name = "Janissary Maker"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"wF" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
-/obj/item/storage/backpack/duffelbag/sec/surgery{
-	pixel_y = 4
-	},
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"wQ" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 4
-	},
-/obj/item/storage/box/donkpockets{
-	pixel_x = 5;
-	pixel_y = 6
-	},
-/turf/open/floor/mineral/titanium/tiled/purple,
-/area/shuttle)
-"yp" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -521,22 +467,95 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"yB" = (
+"vL" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
-	dir = 1
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/mineral/titanium/tiled,
+/area/shuttle)
+"vU" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/machinery/vending/cigarette,
+/obj/machinery/light/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"vY" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"wb" = (
 /obj/effect/turf_decal/tile/red,
-/obj/structure/cannon{
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"wQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/landmark/start{
+	name = "Ottoman Raider"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"yh" = (
+/obj/machinery/computer/operating{
 	dir = 4
 	},
+/obj/machinery/light/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle)
+"yp" = (
+/obj/effect/decal/cleanable/wrapping,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"yB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark{
+	name = "Ottoman Chess"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"za" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/fishing_portal_generator/full,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "zl" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"zq" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "zu" = (
 /obj/effect/turf_decal/tile/red{
@@ -545,33 +564,65 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "zK" = (
-/obj/structure/cable,
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/structure/bed/maint,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"zW" = (
+/obj/item/reagent_containers/cup/bottle/welding_fuel{
+	pixel_y = 8;
+	pixel_x = 10
+	},
+/turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle)
 "Ad" = (
-/obj/structure/chair/e_chair{
-	dir = 1
-	},
 /obj/structure/cable,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/silver,
 /area/shuttle)
 "Ag" = (
-/obj/machinery/door/poddoor/shutters{
-	name = "Operation Shutters";
-	id = "ottoman";
-	layer = 4.11
+/obj/structure/cable,
+/obj/machinery/power/terminal{
+	dir = 4
 	},
-/obj/structure/holosign/barrier/atmos/sturdy,
-/turf/open/floor/mineral/titanium/tiled,
+/turf/open/floor/mineral/silver,
 /area/shuttle)
-"Ax" = (
+"Aq" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/rack{
+	icon = 'icons/obj/service/hand_of_god_structures.dmi';
+	icon_state = "convertaltar";
+	name = "altar"
+	},
+/obj/item/book/bible{
+	name = "Quran";
+	icon_state = "koran";
+	inhand_icon_state = "koran";
+	deity_name = "Allah"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"Au" = (
+/obj/structure{
+	anchored = 1;
+	resistance_flags = 115;
+	icon = 'icons/obj/machines/telepad.dmi';
+	icon_state = "mechpad";
+	name = "portal receiver"
+	},
 /obj/effect/landmark{
-	name = "Ottoman Chess"
+	name = "Ottoman Portal Exit"
 	},
 /turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"AF" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/structure/rack,
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/toxin{
+	pixel_y = 6
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
 "AH" = (
 /obj/item/multitool{
@@ -598,9 +649,11 @@
 /obj/item/storage/box/coffeepack,
 /obj/item/storage/box/coffeepack/robusta,
 /obj/machinery/button/door/directional/north{
-	id = "ottoman"
+	id = "ottoman";
+	req_access = list("cent_captain")
 	},
 /obj/item/knife/kitchen,
+/obj/structure/cable,
 /turf/open/floor/mineral/silver,
 /area/shuttle)
 "BJ" = (
@@ -612,16 +665,9 @@
 /turf/open/floor/mineral/silver,
 /area/shuttle)
 "BM" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"BS" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 4
-	},
+/obj/item/radio/intercom/directional/west,
 /turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "BU" = (
@@ -631,16 +677,10 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "BX" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/mineral/titanium/tiled,
+/obj/machinery/power/shuttle_engine/heater,
+/obj/machinery/duct,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating/airless,
 /area/shuttle)
 "Cl" = (
 /obj/structure{
@@ -652,6 +692,13 @@
 	pixel_y = -6
 	},
 /turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Cv" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
 "CG" = (
 /obj/structure{
@@ -665,18 +712,38 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "CI" = (
-/obj/effect/decal/cleanable/wrapping,
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"DU" = (
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/mineral/titanium/tiled,
+/area/shuttle)
+"DU" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Eh" = (
 /turf/open/floor/iron/stairs/medium,
 /area/shuttle)
+"El" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/watertank/high,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
 "Em" = (
-/obj/structure/railing/corner/end,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "Ey" = (
@@ -685,56 +752,27 @@
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle)
 "EE" = (
-/obj/item/storage/toolbox/mechanical,
-/obj/machinery/light/directional/east,
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"EG" = (
-/obj/machinery/computer/operating{
-	dir = 4
-	},
-/obj/machinery/light/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"EV" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/rack{
-	icon = 'icons/obj/service/hand_of_god_structures.dmi';
-	icon_state = "convertaltar";
-	name = "altar"
-	},
-/obj/item/book/bible{
-	name = "Quran";
-	icon_state = "koran";
-	inhand_icon_state = "koran";
-	deity_name = "Allah"
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"Fe" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+/obj/structure/chair/e_chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/structure/cable,
+/turf/open/floor/carpet/lone{
 	dir = 4
 	},
-/obj/machinery/chem_dispenser/drinks{
-	pixel_y = 16;
-	density = 0
-	},
-/obj/machinery/chem_dispenser/drinks/beer{
-	pixel_y = 32;
-	density = 0
-	},
-/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"EG" = (
+/turf/open/floor/glass,
 /area/shuttle)
 "Fr" = (
-/obj/machinery/power/shuttle_engine/heater,
-/obj/machinery/duct,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/turf/open/floor/plating/airless,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/landmark/start{
+	name = "Ottoman Raider"
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/machinery/light/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
 "Fy" = (
 /obj/effect/turf_decal/tile/red{
@@ -747,18 +785,39 @@
 /obj/structure/fermenting_barrel/gunpowder,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
+"Gd" = (
+/turf/open/floor/mineral/titanium/tiled,
+/area/shuttle)
 "Gn" = (
 /obj/structure/chair/bronze,
 /obj/effect/landmark{
 	name = "Ottoman Sultan"
 	},
 /obj/machinery/light/floor,
-/obj/structure/cable,
 /turf/open/floor/carpet/red,
+/area/shuttle)
+"Go" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle)
 "GA" = (
 /obj/machinery/power/shuttle_engine/propulsion/burst,
 /turf/open/floor/plating/airless,
+/area/shuttle)
+"Hj" = (
+/obj/structure/fluff{
+	density = 1;
+	icon = 'icons/obj/stack_objects.dmi';
+	icon_state = "sheet-gold_2";
+	name = "piles of gold";
+	desc = "What a beauty..."
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
+/obj/structure/cable,
+/turf/open/floor/mineral/silver,
 /area/shuttle)
 "Hl" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -790,88 +849,54 @@
 	name = "Sultan's Chamber";
 	req_access = list("maint_tunnels")
 	},
+/obj/structure/cable,
 /turf/open/floor/mineral/silver,
 /area/shuttle)
 "Jb" = (
-/obj/item/storage/fancy/cigarettes/cigars/cohiba{
-	pixel_y = 5
-	},
-/obj/item/lighter{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
-	pixel_y = 15
-	},
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/machinery/computer/security/telescreen/entertainment/directional/west,
-/turf/open/floor/mineral/titanium/tiled/purple,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Je" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/engineering_welding,
-/obj/effect/decal/cleanable/fuel_pool,
-/turf/open/floor/mineral/titanium/tiled/yellow,
+/obj/machinery/power/shuttle_engine/propulsion/burst/right,
+/turf/open/floor/plating/airless,
 /area/shuttle)
 "JL" = (
-/obj/item/radio/intercom/syndicate/freerange{
-	name = "ottoman wide-band intercom";
-	resistance_flags = 115;
-	icon_off = "bogdanoff";
-	icon_state = "bogdanoff";
-	icon = 'icons/obj/machines/money_machine.dmi';
-	pixel_y = -1;
-	desc = "A custom-made Ottoman-issue intercom used to transmit on all Nanotrasen frequencies. Particularly expensive.";
-	density = 1
-	},
 /obj/machinery/light/directional/west,
+/obj/machinery/power/rtg,
 /turf/open/floor/carpet/lone{
 	dir = 4
 	},
 /area/shuttle)
-"JV" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 4
-	},
-/obj/structure/rack,
-/obj/item/storage/medkit/o2,
-/obj/item/storage/medkit/toxin{
-	pixel_y = 6
-	},
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
 "Kd" = (
-/obj/structure/fluff{
-	density = 1;
-	icon = 'icons/obj/stack_objects.dmi';
-	icon_state = "sheet-gold_2";
-	name = "piles of gold";
-	desc = "What a beauty..."
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
 	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
-/turf/open/floor/mineral/silver,
-/area/shuttle)
-"KH" = (
-/obj/structure/chair/comfy/shuttle{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/stack/sheet/glass/fifty,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/mineral/titanium/tiled/purple,
+/turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle)
-"KP" = (
-/obj/structure/chair/comfy/shuttle{
+"Ki" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/effect/landmark/start{
-	name = "Ottoman Raider"
+/obj/effect/turf_decal/tile/red{
+	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark,
-/turf/open/floor/mineral/plastitanium/red,
+/obj/effect/spawner/random/vending/snackvend,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"KP" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "KR" = (
 /obj/structure/statue/bone/rib{
@@ -895,20 +920,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"Lr" = (
-/obj/structure/table/wood/fancy/red,
-/obj/structure/cable,
-/obj/item/plate,
-/obj/item/kitchen/spoon{
-	pixel_y = 5;
-	pixel_x = 11
-	},
-/obj/item/kitchen/fork{
-	pixel_x = -12;
-	pixel_y = 5
-	},
-/turf/open/floor/carpet/red,
-/area/shuttle)
 "Lv" = (
 /obj/effect/landmark{
 	name = "Ottoman Portal Entrance"
@@ -916,44 +927,58 @@
 /turf/open/floor/circuit/red/off,
 /area/shuttle)
 "LU" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
-	dir = 8
+/obj/machinery/door/poddoor/shutters{
+	name = "Operation Shutters";
+	id = "ottoman"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/rack,
-/obj/item/stack/sheet/glass/fifty,
-/obj/effect/decal/cleanable/glass,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/turf/open/floor/mineral/titanium/tiled/yellow,
+/obj/structure/holosign/barrier/atmos/sturdy,
+/turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "LW" = (
 /obj/structure/weightmachine/weightlifter,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Mu" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/obj/effect/landmark/start{
-	name = "Ottoman Raider"
-	},
-/turf/open/floor/mineral/plastitanium/red,
+/obj/structure/railing/corner/end,
+/turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "MA" = (
-/obj/effect/turf_decal/tile/red,
+/obj/item/storage/toolbox/mechanical,
+/obj/machinery/light/directional/east,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"MK" = (
+/obj/structure/chair/comfy/shuttle,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"Nm" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/comfy/shuttle,
-/obj/item/radio/intercom/directional/west,
-/turf/open/floor/mineral/titanium/tiled/purple,
+"No" = (
+/obj/effect/landmark{
+	name = "Janissary Maker"
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "NT" = (
-/turf/open/floor/mineral/titanium/tiled,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/chem_dispenser/drinks{
+	pixel_y = 16;
+	density = 0
+	},
+/obj/machinery/chem_dispenser/drinks/beer{
+	pixel_y = 32;
+	density = 0;
+	layer = 2.91
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"PF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/maint,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "PL" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -962,26 +987,59 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
 "PM" = (
-/obj/machinery/door/airlock/titanium/glass{
-	name = "Janissary Chambers"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"PN" = (
-/obj/machinery/door/poddoor/shutters{
-	name = "Operation Shutters";
-	id = "ottoman";
-	layer = 4.11
-	},
-/obj/structure/holosign/barrier/atmos/sturdy,
-/obj/docking_port/mobile{
-	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
-	shuttle_id = "ottoman";
-	name = "imperial shuttle"
-	},
-/turf/open/floor/mineral/titanium/tiled,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle)
 "PX" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/item/instrument/violin,
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"Qa" = (
+/obj/structure/table/optable,
+/obj/effect/decal/cleanable/blood/old,
+/obj/machinery/defibrillator_mount/directional/north,
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle)
+"Qg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/landmark/start{
+	name = "Ottoman Raider"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"QN" = (
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_y = -5;
+	pixel_x = -7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Re" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Rm" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"Rn" = (
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"RX" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 8
 	},
@@ -994,51 +1052,6 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"Qg" = (
-/obj/structure/table/optable,
-/obj/effect/decal/cleanable/blood/old,
-/obj/machinery/defibrillator_mount/directional/north,
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"Qv" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/turf/open/floor/mineral/titanium/tiled/yellow,
-/area/shuttle)
-"QH" = (
-/obj/item/statuebust/hippocratic{
-	anchored = 1;
-	density = 1
-	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
-/turf/open/floor/mineral/silver,
-/area/shuttle)
-"QN" = (
-/obj/item/reagent_containers/cup/bucket/wooden{
-	pixel_y = -5;
-	pixel_x = -7
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"QY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/bed/maint,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"Rm" = (
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"Rn" = (
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"RX" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/bed/maint,
-/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Sc" = (
 /obj/structure/fluff{
@@ -1062,62 +1075,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle)
+"Sq" = (
+/obj/machinery/door/airlock/titanium/glass{
+	name = "Janissary Chambers"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
 "SQ" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/mineral/titanium/tiled/blue,
-/area/shuttle)
-"Tv" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/wrapping,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"TC" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"TD" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/machinery/microwave{
-	pixel_y = 6
-	},
-/turf/open/floor/mineral/titanium/tiled/purple,
-/area/shuttle)
-"TJ" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
-"Ub" = (
-/obj/structure/cable,
-/turf/open/floor/mineral/silver,
-/area/shuttle)
-"Us" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/turf/open/floor/mineral/titanium/tiled,
-/area/shuttle)
-"Uv" = (
-/obj/machinery/power/shuttle_engine/propulsion/burst/left,
-/turf/open/floor/plating/airless,
-/area/shuttle)
-"UN" = (
-/obj/machinery/power/shuttle_engine/propulsion/burst/right,
-/turf/open/floor/plating/airless,
-/area/shuttle)
-"UO" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -1125,78 +1089,36 @@
 /obj/structure/fermenting_barrel/gunpowder,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"VD" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+"TC" = (
+/obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/structure/rack,
-/obj/item/stack/sheet/mineral/plasma/thirty,
-/obj/effect/decal/cleanable/plasma,
-/turf/open/floor/mineral/titanium/tiled/yellow,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"VP" = (
-/obj/machinery/door/window/survival_pod/left/directional/west{
-	req_access = list("cent_captain");
-	dir = 4
-	},
-/obj/structure/rack,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/machinery/light/directional/west,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
-/area/shuttle)
-"VR" = (
-/obj/machinery/door/airlock/titanium/glass{
-	name = "Sultan's Chamber"
-	},
+"TJ" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/mineral/titanium/tiled,
-/area/shuttle)
-"Wb" = (
-/obj/item/storage/toolbox/mechanical,
-/turf/open/floor/mineral/titanium/tiled/yellow,
-/area/shuttle)
-"Wd" = (
-/obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Ub" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/structure/rack,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
-/obj/item/clothing/mask/gas/explorer/folded,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
-"Wn" = (
+"Uv" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/mineral/titanium/tiled/purple,
+/area/shuttle)
+"UN" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -1208,6 +1130,60 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/vending/coffee,
 /turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"UO" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle)
+"VD" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"VP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/landmark/start{
+	name = "Ottoman Raider"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle)
+"Wb" = (
+/obj/item/storage/toolbox/mechanical,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/shuttle)
+"We" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle)
+"Wk" = (
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle)
+"Wn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/donkpockets{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/instrument/recorder{
+	pixel_y = -6;
+	pixel_x = 5
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "Wq" = (
 /obj/structure{
@@ -1228,7 +1204,24 @@
 	view_range = 10;
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/carpet/red,
+/area/shuttle)
+"WN" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/obj/item/storage/toolbox/ammobox/strilka310,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "WT" = (
 /obj/structure/statue/bone/rib{
@@ -1237,46 +1230,45 @@
 	},
 /turf/open/floor/iron/recharge_floor,
 /area/shuttle)
-"Xw" = (
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/structure/reagent_dispensers/watertank/high,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
 "Ys" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner,
-/obj/structure/rack,
-/obj/item/stack/sheet/iron/fifty,
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
-	dir = 4
+/obj/item/storage/backpack/duffelbag/sec/surgery{
+	pixel_y = 4
 	},
-/turf/open/floor/mineral/titanium/tiled/yellow,
+/obj/structure/table/reinforced/rglass,
+/turf/open/floor/mineral/titanium/tiled/blue,
+/area/shuttle)
+"YB" = (
+/obj/structure/table/wood/fancy/red,
+/obj/item/plate,
+/obj/item/kitchen/spoon{
+	pixel_y = 5;
+	pixel_x = 11
+	},
+/obj/item/kitchen/fork{
+	pixel_x = -12;
+	pixel_y = 5
+	},
+/turf/open/floor/carpet/red,
 /area/shuttle)
 "YN" = (
-/obj/structure/weightmachine,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/maint,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Zb" = (
-/obj/structure{
-	anchored = 1;
-	resistance_flags = 115;
-	icon = 'icons/obj/machines/telepad.dmi';
-	icon_state = "mechpad";
-	name = "portal receiver"
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
 	},
-/obj/effect/landmark{
-	name = "Ottoman Portal Exit"
-	},
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "Zs" = (
-/obj/structure/punching_bag,
-/turf/open/floor/mineral/titanium/tiled/purple,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
 "ZA" = (
 /obj/effect/turf_decal/tile/red,
@@ -1292,22 +1284,36 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "ZP" = (
-/obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/machinery/vending/cigarette,
-/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
+/obj/item/clothing/mask/gas/explorer/folded,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "ZT" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/structure/rack,
+/obj/item/stack/sheet/iron/fifty,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 4
 	},
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle)
 
 (1,1,1) = {"
@@ -1342,13 +1348,13 @@ Id
 rL
 rL
 rL
-ts
-vL
-KP
-RX
-QY
-nn
-nn
+lA
+Qg
+Fr
+YN
+PF
+zK
+zK
 rL
 rL
 rL
@@ -1363,19 +1369,19 @@ Id
 Id
 rL
 rL
-dR
-Ys
-ad
+PM
+ZT
+UO
 pZ
 Rm
 df
 in
 PL
-Tv
-hT
+ho
+jt
 rL
-Wn
-rL
+UN
+PM
 rL
 rL
 Id
@@ -1385,21 +1391,21 @@ Id
 (4,1,1) = {"
 Id
 rL
-dR
+rL
 Rn
-ta
-Qv
+KP
+Go
 qf
 Hl
-CI
-sz
-Mu
-EE
+yp
+wQ
+VP
+MA
 AH
 zl
 BU
 TC
-oM
+Re
 rL
 lj
 lj
@@ -1412,31 +1418,31 @@ rL
 Rn
 Lv
 Rn
-LU
+Kd
 rL
 rL
 rL
 rL
 rL
-dR
-EV
-dR
-rL
+PM
+Aq
+PM
+PM
 Rn
 ZA
-dR
-dR
+PM
+PM
 ei
-Fr
-Uv
+BX
+uO
 "}
 (6,1,1) = {"
 rL
-dR
-sW
+PM
+Jb
 Rn
 Rn
-dR
+PM
 rL
 Id
 Id
@@ -1445,21 +1451,21 @@ Id
 rL
 rL
 rL
-vU
+tb
 ZH
 pW
 Li
-dR
-dR
-Fr
+PM
+PM
+BX
 GA
 "}
 (7,1,1) = {"
 rL
-Je
+jU
 Sn
 VD
-dR
+PM
 rL
 Id
 Id
@@ -1469,19 +1475,19 @@ Id
 Id
 Id
 rL
-dR
-tP
+PM
+tu
 ZH
 TC
-yB
+aJ
 rL
-Fr
-UN
+BX
+Je
 "}
 (8,1,1) = {"
 rL
 Wb
-qC
+zW
 rL
 rL
 Id
@@ -1494,12 +1500,12 @@ Id
 Id
 Id
 rL
-dR
+PM
 tr
 Rn
 ui
-dR
-dR
+PM
+PM
 lj
 "}
 (9,1,1) = {"
@@ -1519,9 +1525,9 @@ Id
 Id
 Id
 rL
-pO
+za
+DU
 aP
-ra
 Fy
 rL
 Id
@@ -1536,18 +1542,18 @@ Id
 Id
 rL
 JL
-dR
+PM
 rL
 rL
 rL
 rL
 Id
 rL
-dR
+PM
 lF
 QN
-UO
-dR
+SQ
+PM
 rL
 "}
 (11,1,1) = {"
@@ -1558,20 +1564,20 @@ Id
 Id
 Id
 rL
-dR
-Kd
-QH
+PM
+Hj
+qC
 rL
-VP
+ts
 rL
 Id
 Id
 Id
 rL
-Us
-oR
+sn
+sW
 aA
-sA
+aC
 rL
 "}
 (12,1,1) = {"
@@ -1581,22 +1587,22 @@ rL
 Id
 Id
 rL
-dR
+PM
 BF
 Wv
 HP
 pd
-Ub
-zK
-uO
-uO
-uO
+pd
+bq
+ob
+ob
+ob
 rL
 KR
 zu
 sG
 sG
-Ag
+LU
 "}
 (13,1,1) = {"
 Id
@@ -1606,21 +1612,21 @@ Id
 rL
 rL
 gm
-Ub
+Ag
 Gn
-Lr
+YB
+EE
 Ad
-Ub
 IA
-ob
-ob
-ob
-VR
-NT
+EG
+EG
+EG
+uv
+Gd
 Bd
 Eh
 Eh
-PN
+uy
 "}
 (14,1,1) = {"
 Id
@@ -1629,22 +1635,22 @@ rL
 Id
 Id
 rL
-dR
+PM
 lI
 uQ
 eK
+Ad
 pd
-Ub
-zK
-uO
-uO
-uO
+bq
+ob
+ob
+ob
 rL
 WT
-DU
+CI
 pT
 pT
-Ag
+LU
 "}
 (15,1,1) = {"
 Id
@@ -1654,20 +1660,20 @@ Id
 Id
 Id
 rL
-dR
+PM
 Sc
 BJ
 rL
-id
+aR
 rL
 Id
 Id
 Id
 rL
-ly
 Em
+Mu
 gp
-BX
+vL
 rL
 "}
 (16,1,1) = {"
@@ -1679,24 +1685,24 @@ Id
 Id
 Id
 rL
-bK
-dR
+ni
+PM
 rL
 rL
 rL
 rL
 Id
 rL
-dR
+PM
 bX
 Rn
 ZA
-dR
+PM
 rL
 "}
 (17,1,1) = {"
 rL
-EG
+yh
 rL
 rL
 Id
@@ -1711,17 +1717,17 @@ Id
 Id
 Id
 rL
-uS
-TJ
-MA
-uv
+WN
+Ub
+tP
+ig
 rL
 Id
 "}
 (18,1,1) = {"
 rL
-Qg
-ni
+Qa
+Wk
 rL
 rL
 Id
@@ -1734,20 +1740,20 @@ Id
 Id
 Id
 rL
-dR
-tb
+PM
+We
 Rn
-aJ
-dR
-dR
+wb
+PM
+PM
 lj
 "}
 (19,1,1) = {"
 rL
-wF
-SQ
-JV
-dR
+Ys
+Zs
+AF
+PM
 rL
 Id
 Id
@@ -1757,22 +1763,22 @@ Id
 Id
 Id
 rL
-dR
-Wd
-TJ
-MA
-Xw
+PM
+ZP
+Ub
+tP
+El
 rL
-Fr
-Uv
+BX
+uO
 "}
 (20,1,1) = {"
 rL
-dR
+PM
 Sk
 Wq
 Sk
-dR
+PM
 rL
 Id
 Id
@@ -1781,57 +1787,57 @@ Id
 rL
 rL
 rL
-bt
-TJ
-bB
-yp
-dR
-dR
-Fr
+Ki
+Ub
+oG
+uS
+PM
+PM
+BX
 GA
 "}
 (21,1,1) = {"
 Id
 rL
 Cl
-Zb
+Au
 CG
-bq
+iC
 rL
 rL
 rL
 rL
 rL
-dR
-TD
-dR
-rL
+PM
+bB
+PM
+PM
 Rn
 ZA
-dR
-dR
+PM
+PM
 ei
-Fr
-UN
+BX
+Je
 "}
 (22,1,1) = {"
 Id
 rL
-dR
+rL
 rV
 Bv
+Cv
+bt
+vY
+ad
+BM
 kI
-uY
-sn
-Zs
-Nm
-Jb
-KH
-lW
-tu
-PM
-MA
-cR
+Uv
+Wn
+pO
+Sq
+tP
+TJ
 rL
 lj
 lj
@@ -1843,19 +1849,19 @@ Id
 Id
 rL
 rL
+PM
+RX
+rL
+NT
+Zb
 dR
+Zb
+fW
+fW
 PX
 rL
-Fe
-uy
-wQ
-uy
-fW
-fW
-BS
-rL
-ZP
-rL
+vU
+PM
 rL
 rL
 Id
@@ -1871,12 +1877,12 @@ rL
 rL
 rL
 Rn
-wo
-YN
+No
+oB
 LW
-BM
-Ax
-ZT
+MK
+yB
+zq
 rL
 rL
 rL
