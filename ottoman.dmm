@@ -551,12 +551,6 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
-"zq" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle)
 "zu" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -946,10 +940,6 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"MK" = (
-/obj/structure/chair/comfy/shuttle,
-/turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "No" = (
 /obj/effect/landmark{
@@ -1880,9 +1870,9 @@ Rn
 No
 oB
 LW
-MK
+Rn
 yB
-zq
+Rn
 rL
 rL
 rL
