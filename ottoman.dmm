@@ -36,7 +36,8 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/structure/cannon{
-	dir = 4
+	dir = 4;
+	anchored = 0
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
@@ -51,12 +52,8 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "aR" = (
-/mob/living/basic/pony{
-	dir = 8;
-	name = "Duldul";
-	health = 300;
-	maxHealth = 300;
-	ponycolors = list("#d0cecc","#353841")
+/obj/effect/landmark{
+	name = "Duldul"
 	},
 /obj/machinery/door/window/survival_pod/left/directional/west{
 	req_access = list("cent_captain")
@@ -141,6 +138,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
+/obj/structure/cannon{
+	dir = 4
+	},
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "ho" = (
@@ -210,7 +210,9 @@
 	pixel_y = 15
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/machinery/computer/security/telescreen/entertainment/directional/west,
+/obj/machinery/computer/security/telescreen/entertainment/directional/west{
+	network = list("ottoman")
+	},
 /turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "lj" = (
@@ -337,6 +339,16 @@
 /area/shuttle)
 "sG" = (
 /turf/open/floor/iron/stairs/left,
+/area/shuttle)
+"sH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "sW" = (
 /obj/structure/railing/corner/end/flip,
@@ -909,7 +921,8 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/structure/cannon{
-	dir = 1
+	dir = 1;
+	anchored = 0
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium,
@@ -962,6 +975,12 @@
 	pixel_y = 32;
 	density = 0;
 	layer = 2.91
+	},
+/obj/item/reagent_containers/cup/glass/shaker{
+	pixel_x = 5
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = -11
 	},
 /turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
@@ -1229,7 +1248,9 @@
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
 "YB" = (
-/obj/structure/table/wood/fancy/red,
+/obj/effect/landmark{
+	name = "Lowering Table"
+	},
 /obj/item/plate,
 /obj/item/kitchen/spoon{
 	pixel_y = 5;
@@ -1843,7 +1864,7 @@ PM
 RX
 rL
 NT
-Zb
+sH
 dR
 Zb
 fW
