@@ -388,21 +388,17 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
-/obj/item/food/grown/apple/gold,
 /obj/machinery/light/directional/west,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
+/obj/item/food/grown/apple/gold,
 /turf/open/floor/carpet/lone{
 	dir = 4
 	},
@@ -469,7 +465,8 @@
 /area/shuttle)
 "uQ" = (
 /obj/machinery/computer/camera_advanced/syndie{
-	dir = 8
+	dir = 8;
+	networks = list("ss13", "ottoman")
 	},
 /obj/structure/cable,
 /turf/open/floor/carpet/red,
