@@ -42,12 +42,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "aP" = (
+/obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/item/reagent_containers/cup/bucket/wooden{
-	pixel_x = 7;
-	pixel_y = -5
+/obj/structure/chair/plastic{
+	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
@@ -139,9 +139,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/structure/cannon{
-	dir = 4
-	},
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "ho" = (
@@ -377,9 +374,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/structure/chair/plastic{
-	dir = 4
-	},
+/obj/item/reagent_containers/cup/bucket/wooden,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "ts" = (
@@ -411,16 +406,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
+/obj/item/flashlight/flare/torch{
+	pixel_x = 7
+	},
+/obj/item/flashlight/flare/torch,
 /obj/structure/rack,
-/obj/item/bait_can/worm/premium{
-	pixel_y = 8;
-	pixel_x = 9
-	},
-/obj/item/bait_can/worm/premium{
-	pixel_y = 8;
-	pixel_x = -6
-	},
-/obj/item/fishing_rod/telescopic,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "tP" = (
@@ -480,6 +470,16 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
+/obj/structure/rack,
+/obj/item/bait_can/worm/premium{
+	pixel_y = 8;
+	pixel_x = -6
+	},
+/obj/item/bait_can/worm/premium{
+	pixel_y = 8;
+	pixel_x = 9
+	},
+/obj/item/fishing_rod/telescopic,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "vL" = (
@@ -559,7 +559,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/machinery/fishing_portal_generator/full,
+/obj/item/reagent_containers/cup/bucket/wooden,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "zl" = (
@@ -1029,10 +1029,6 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle)
 "QN" = (
-/obj/item/reagent_containers/cup/bucket/wooden{
-	pixel_y = -5;
-	pixel_x = -7
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
@@ -1117,6 +1113,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/machinery/fishing_portal_generator/full,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Ub" = (
@@ -1545,7 +1542,7 @@ Id
 rL
 za
 DU
-aP
+TC
 Fy
 rL
 Id
@@ -1831,7 +1828,7 @@ bB
 PM
 PM
 Rn
-ZA
+aP
 PM
 PM
 ei
