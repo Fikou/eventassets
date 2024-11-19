@@ -445,7 +445,8 @@
 /obj/docking_port/mobile{
 	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
 	shuttle_id = "ottoman";
-	name = "imperial shuttle"
+	name = "imperial shuttle";
+	preferred_direction = 2
 	},
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
