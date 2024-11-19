@@ -1220,7 +1220,8 @@
 	jump_to_ports = list("arrival_stationary");
 	view_range = 5;
 	dir = 4;
-	y_offset = 10
+	y_offset = 10;
+	whitelist_turfs = list(/turf/open/space,/turf/open/floor/plating,/turf/open/lava,/turf/closed/mineral,/turf/open/openspace,/turf/open/misc)
 	},
 /obj/structure/cable,
 /turf/open/floor/carpet/red,
