@@ -59,9 +59,7 @@
 	req_access = list("cent_captain")
 	},
 /obj/machinery/light/directional/east,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/gold,
 /area/shuttle)
 "bq" = (
 /obj/structure/cable,
@@ -130,9 +128,7 @@
 	interaction_flags_machine = 0;
 	possible_destinations = "ottoman_custom"
 	},
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/gold,
 /area/shuttle)
 "gp" = (
 /obj/structure/railing{
@@ -171,9 +167,16 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner,
 /obj/machinery/vending/wallmed/directional/west,
 /obj/effect/decal/cleanable/blood/old,
-/obj/item/defibrillator/loaded,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
+	},
+/obj/item/storage/medkit/tactical,
+/obj/structure/rack,
+/obj/item/storage/medkit/tactical{
+	pixel_y = 2
+	},
+/obj/item/storage/medkit/tactical{
+	pixel_y = 4
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
@@ -211,6 +214,9 @@
 /obj/machinery/computer/security/telescreen/entertainment/directional/west{
 	network = list("ottoman")
 	},
+/obj/item/food/kebab/monkey{
+	pixel_y = 8
+	},
 /turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle)
 "lj" = (
@@ -247,9 +253,7 @@
 	syndicate = 1
 	},
 /obj/machinery/light/directional/east,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/gold,
 /area/shuttle)
 "ob" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
@@ -394,9 +398,7 @@
 /obj/item/food/grown/apple/gold,
 /obj/item/food/grown/apple/gold,
 /obj/item/food/grown/apple/gold,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/gold,
 /area/shuttle)
 "tu" = (
 /obj/effect/turf_decal/tile/red{
@@ -629,6 +631,15 @@
 	},
 /obj/structure/rack,
 /obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/o2{
+	pixel_y = 2
+	},
+/obj/item/storage/medkit/o2{
+	pixel_y = 2
+	},
+/obj/item/storage/medkit/toxin{
+	pixel_y = 4
+	},
 /obj/item/storage/medkit/toxin{
 	pixel_y = 6
 	},
@@ -640,11 +651,6 @@
 	pixel_y = 12
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle)
-"Bd" = (
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
 /area/shuttle)
 "Bv" = (
 /obj/machinery/light/floor,
@@ -660,7 +666,8 @@
 /obj/item/storage/box/coffeepack/robusta,
 /obj/machinery/button/door/directional/north{
 	id = "ottoman";
-	req_access = list("cent_captain")
+	req_access = list("cent_captain");
+	name = "Shuttle Shutters"
 	},
 /obj/item/knife/kitchen,
 /obj/structure/cable,
@@ -767,9 +774,7 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/silver,
 /area/shuttle)
 "EG" = (
 /turf/open/floor/glass,
@@ -800,7 +805,9 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/shuttle)
 "Gn" = (
-/obj/structure/chair/bronze,
+/obj/structure/chair/bronze{
+	anchored = 1
+	},
 /obj/effect/landmark{
 	name = "Ottoman Sultan"
 	},
@@ -874,9 +881,7 @@
 "JL" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/power/rtg,
-/turf/open/floor/carpet/lone{
-	dir = 4
-	},
+/turf/open/floor/mineral/gold,
 /area/shuttle)
 "Kd" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
@@ -992,6 +997,7 @@
 "PF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/maint,
+/obj/item/toy/plush/beeplushie,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "PL" = (
@@ -1017,6 +1023,9 @@
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/defibrillator_mount/directional/north,
+/obj/item/defibrillator/loaded{
+	pixel_y = 9
+	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
 "Qg" = (
@@ -1055,11 +1064,17 @@
 	},
 /obj/structure/rack,
 /obj/item/storage/medkit/brute,
-/obj/item/storage/medkit/fire{
-	pixel_y = 6
-	},
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 1
+	},
+/obj/item/storage/medkit/brute{
+	pixel_y = 2
+	},
+/obj/item/storage/medkit/fire{
+	pixel_y = 4
+	},
+/obj/item/storage/medkit/fire{
+	pixel_y = 6
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
@@ -1183,6 +1198,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle)
 "Wk" = (
+/obj/machinery/stasis{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle)
 "Wn" = (
@@ -1639,7 +1657,7 @@ EG
 EG
 uv
 Gd
-Bd
+Gd
 Eh
 Eh
 uy
