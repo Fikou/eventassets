@@ -787,7 +787,6 @@ for _, landmark in landmarks do
 end
 
 people_i_dont_like = {
---	"mimepride",
 }
 
 local function remove_person_i_dont_like(_, client)
