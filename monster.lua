@@ -16,14 +16,15 @@ local loadIcon = function(http)
 	return iconsByHttp[http]
 end
 
-cooldowns = {}
+move_cooldowns = {}
+attack_cooldowns = {}
 local brains = 0
 local monster_ref = nil
 
 local jankbook = SS13.new("/datum/book_info")
 local info = SS13.new("/atom/movable/screen")
 info.screen_loc = "WEST:6,CENTER"
-info.maptext_width = 64
+info.maptext_width = 96
 info.maptext = "<span class='maptext'>BRAINS: 0\nHEALTH: 100%</span>"
 
 local update_info = function()
@@ -70,45 +71,64 @@ local on_tentacle_hit = function(proj, firer, target)
 end
 
 local click = function(brainmob, clicked_on, modifiers)
-	if modifiers["alt"] or modifiers["shift"] or modifiers["ctrl"] or modifiers["middle"] then
+	if modifiers["alt"] or modifiers["shift"] or modifiers["ctrl"] then
 		return
 	end
 	local monster = brainmob.loc
 	if not SS13.istype(monster, "/mob/living/simple_animal/hostile/megafauna") then
 		return
 	end
-	if cooldowns[brainmob.ckey] > dm.world.time or brainmob.stat == 4 then
+	if attack_cooldowns[brainmob.ckey] > dm.world.time or brainmob.stat == 4 then
 		return
 	end
 	if clicked_on == monster then
 		return
 	end
 	if modifiers["left"] then
+		monster:face_atom(clicked_on)
 		if monster:Adjacent(clicked_on) == 0 then
 			return
 		end
-		cooldowns[brainmob.ckey] = dm.world.time + 8
-		monster:face_atom(clicked_on)
+		attack_cooldowns[brainmob.ckey] = dm.world.time + 8
 		monster:UnarmedAttack(clicked_on, 1, modifiers)
 	elseif modifiers["right"] then
+		monster:face_atom(clicked_on)
 		if monster:Adjacent(clicked_on) ~= 0 then
 			return
 		end
 		if brains < 2 then
-			cooldowns[brainmob.ckey] = dm.world.time + 8
+			attack_cooldowns[brainmob.ckey] = dm.world.time + 8
 		elseif brains < 3 then
-			cooldowns[brainmob.ckey] = dm.world.time + 16
+			attack_cooldowns[brainmob.ckey] = dm.world.time + 16
 		else
-			cooldowns[brainmob.ckey] = dm.world.time + 24
+			attack_cooldowns[brainmob.ckey] = dm.world.time + 24
 		end
 		monster:face_atom(clicked_on)
 		monster:visible_message("<span class='danger'><b>The brainsucker</b> fires at " .. clicked_on.name .. "!</span>")
 		local proj = monster:fire_projectile(SS13.type("/obj/projectile/tentacle"), clicked_on, "sound/effects/splat.ogg")
 		SS13.register_signal(proj, "projectile_self_on_hit", on_tentacle_hit)
+	elseif modifiers["middle"] then
+		attack_cooldowns[brainmob.ckey] = dm.world.time + 80
+		dm.global_procs.playsound(monster.loc, "sound/mobs/non-humanoids/space_dragon/space_dragon_roar.ogg", 100, 1)
+		monster:visible_message("<span class='userdanger'><b>The brainsucker</b> roars furiously!</span>")
+		for _, thing in dm.global_procs._view(5, monster) do
+			if thing == monster then
+				continue
+			end
+			if SS13.istype(thing, "/mob/living") then
+				thing:soundbang_act(1, 5, 5, 3)
+			elseif dm.global_procs._prob(33) == 0 then
+				continue
+			end
+			thing:Shake(2, 2, 10)
+		end
 	end
 end
 
 local eat_brain = function(monster, brain)
+	if list.find(monster.wanted_objects, brain) ~= 0 then
+		return
+	end
 	list.add(monster.wanted_objects, brain)
 	brain:forceMove(monster)
 	monster:visible_message("<span class='danger'><b>The brainsucker</b> devours " .. brain.name .. "!</span>")
@@ -129,13 +149,16 @@ local eat_brain = function(monster, brain)
 		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase big'>YOU HAVE JOINED THE H I V E M I N D</span>")
 		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Support and speak with your brethren.</span>")
 		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Your movement and attack waiting periods are tied.</span>")
-		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Left-Click to melee. Right-Click to shoot a tentacle.</span>")
+		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Left-Click to rend your foes. Consumes the brains of corpses.</span>")
+		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Right-Click to fire a tentacle. Immobilizes the hit person.</span>")
+		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Middle-Click to roar.</span>")
 		brainmob:playsound_local(brainmob, "sound/music/antag/hypnotized.ogg", 100)
 		SS13.register_signal(brainmob, "living_vocal_speech", talk)
 		SS13.register_signal(brainmob, "mob_clickon", click)
 		list.add(brainmob.hud_used.static_inventory, info)
 		brainmob.hud_used:show_hud(brainmob.hud_used.hud_version)
-		cooldowns[brainmob.ckey] = 0
+		move_cooldowns[brainmob.ckey] = 0
+		attack_cooldowns[brainmob.ckey] = 0
 	end
 	local radius = dm.global_procs._rand(1, 8)
 	local angle = dm.global_procs._rand(0, 359)
@@ -241,10 +264,10 @@ local devour = function(monster, who, success)
 end
 
 local onmove = function(monster, brainmob, direction)
-	if cooldowns[brainmob.ckey] > dm.world.time or brainmob.stat == 4 then
+	if move_cooldowns[brainmob.ckey] > dm.world.time or brainmob.stat == 4 then
 		return
 	end
-	cooldowns[brainmob.ckey] = dm.world.time + 4
+	move_cooldowns[brainmob.ckey] = dm.world.time + 4
 	monster:try_step_multiz(direction)
 	return 1
 end
@@ -268,10 +291,12 @@ spawn_monster = function(loc, ghost_amount)
 	monster.real_name = "brainsucker"
 	monster.desc = "Brainstorm incarnate."
 	monster.del_on_death = 1
+	monster.can_buckle_to = 0
 	monster.move_force = 5000
 	monster.mouse_opacity = 1
 	monster.next_move_modifier = 0
 	monster.environment_smash = 2
+	monster.gender = "neuter"
 	monster.footstep_type = "footstep_heavy"
 	monster.verb_say = "screeches"
 	monster.verb_exclaim = "roars"
