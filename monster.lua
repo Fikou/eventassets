@@ -110,8 +110,9 @@ local click = function(brainmob, clicked_on, modifiers)
 	elseif modifiers["middle"] then
 		attack_cooldowns[brainmob.ckey] = dm.world.time + 80
 		dm.global_procs.playsound(monster.loc, "sound/mobs/non-humanoids/space_dragon/space_dragon_roar.ogg", 100, 1)
+		monster:manual_emote("roars!")
 		monster:visible_message("<span class='userdanger'><b>The brainsucker</b> roars furiously!</span>")
-		for _, thing in dm.global_procs._view(5, monster) do
+		for _, thing in dm.global_procs.circle_view(monster, 4) do
 			if thing == monster then
 				continue
 			end
@@ -147,11 +148,11 @@ local eat_brain = function(monster, brain)
 		brainmob:remove_traits({"immobilized", "handsblocked"}, "brain-unaided")
 		brainmob:add_traits({"emotemute"}, "brain-unaided")
 		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase big'>YOU HAVE JOINED THE H I V E M I N D</span>")
-		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Support and speak with your brethren.</span>")
-		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Your movement and attack waiting periods are tied.</span>")
+		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Support your brethren.</span>")
 		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Left-Click to rend your foes. Consumes the brains of corpses.</span>")
 		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Right-Click to fire a tentacle. Immobilizes the hit person.</span>")
-		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Middle-Click to roar.</span>")
+		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Middle-Click to roar. Deafens people around you.</span>")
+		dm.global_procs.to_chat(brainmob, "<span class='hypnophrase'>Consumed brains join the hivemind.</span>")
 		brainmob:playsound_local(brainmob, "sound/music/antag/hypnotized.ogg", 100)
 		SS13.register_signal(brainmob, "living_vocal_speech", talk)
 		SS13.register_signal(brainmob, "mob_clickon", click)
@@ -166,8 +167,13 @@ local eat_brain = function(monster, brain)
 	brain_image.pixel_x = radius * dm.global_procs._cos(angle) + 12
 	brain_image.pixel_y = radius * dm.global_procs._sin(angle) + 34
 	list.add(monster.underlays, brain_image)
+	if brains == 0 and monster.can_have_ai == 1 then
+		monster.can_have_ai = 0
+		monster:toggle_ai(3)
+	end
 	brains = brains + 1
 	update_info()
+	dm.global_procs.playsound(monster.loc, "sound/effects/changeling_absorb/changeling_absorb1.ogg", 100, 1)
 end
 
 local ondeath = function(monster)
@@ -230,17 +236,25 @@ local devour = function(monster, who, success)
 					brain = possible_brain
 				end
 			end
+			if not SS13.is_valid(brain) then
+				return
+			end
 			who:drop_organs(nil, 0)
 			eat_brain(monster, brain)
-			SS13.new("/obj/effect/gibspawner/generic", who:drop_location())
+			SS13.new("/obj/effect/decal/cleanable/blood", who:drop_location())
 		elseif SS13.istype(who, "/obj/item/organ/brain") then
 			eat_brain(monster, who)
+			SS13.new("/obj/effect/decal/cleanable/blood", who:drop_location())
 		elseif SS13.istype(who, "/obj/item/mmi") and SS13.is_valid(who.brain) then
 			local brain = who.brain
+			if not SS13.is_valid(brain) then
+				return
+			end
 			mmi:eject_brain(monster)
 			mmi:update_appearance()
 			mmi.name = SS13.new("/obj/item/mmi").name
 			eat_brain(monster, brain)
+			SS13.new("/obj/effect/decal/cleanable/blood", who:drop_location())
 		elseif SS13.istype(who, "/mob/living/silicon/robot") then
 			devour_robot(monster, who, success)
 		end
@@ -260,7 +274,6 @@ local devour = function(monster, who, success)
 	head:dismember()
 	SS13.new("/obj/effect/gibspawner/human/bodypartless", who:drop_location())
 	head:take_damage(10000)
-	dm.global_procs.playsound(monster.loc, "sound/effects/changeling_absorb/changeling_absorb1.ogg", 100, 1)
 end
 
 local onmove = function(monster, brainmob, direction)
@@ -272,14 +285,13 @@ local onmove = function(monster, brainmob, direction)
 	return 1
 end
 
-spawn_monster = function(loc, ghost_amount)
+spawn_monster = function(loc, ghost_amount, alt_lang)
 	local monster = SS13.new("/mob/living/simple_animal/hostile/megafauna", loc)
 	monster.icon_living = "creature"
 	monster.icon_state = "creature"
 	monster.icon = loadIcon("https://github.com/Fikou/eventassets/raw/refs/heads/main/brainsucker.dmi")
-	monster.can_have_ai = 0
-	monster.melee_damage_lower = 25
-	monster.melee_damage_upper = 25
+	monster.melee_damage_lower = 20
+	monster.melee_damage_upper = 20
 	monster.armour_penetration = 30
 	monster.wound_bonus = 0
 	monster.sharpness = 2
@@ -306,13 +318,16 @@ spawn_monster = function(loc, ghost_amount)
 	monster.death_message = "bursts into gore and brains!"
 	monster.maxHealth = 500
 	monster:set_health(500)
+	monster:grant_language(SS13.type("/datum/language/aphasia"), 3, "lol")
+	if alt_lang == 1 then
+		monster:remove_language(SS13.type("/datum/language/common"), 1, "atom")
+	end
 	monster:_RemoveElement({SS13.type("/datum/element/simple_flying")})
 	monster:add_traits({"advancedtooluser"}, lol)
 	monster:set_light_on(0)
 	monster:update_light()
 	monster:add_overlay("ball")
 	monster:add_overlay({dm.global_procs.emissive_appearance(monster.icon, "eyes", monster, 255)})
-	monster:toggle_ai(3)
 	monster:updatehealth()
 	monster:_AddElement({SS13.type("/datum/element/footstep"), "footstep_claw"})
 	local radio = SS13.new("/obj/item/radio")
@@ -327,6 +342,8 @@ spawn_monster = function(loc, ghost_amount)
 	monster:mind_initialize()
 	monster_ref = dm.global_procs.REF(monster)
 	if ghost_amount ~= nil and ghost_amount > 0 then
+		monster.can_have_ai = 0
+		monster:toggle_ai(3)
 		local brains = {}
 		for i=1,ghost_amount do
 			local human = SS13.new("/mob/living/carbon/human", monster:drop_location())
