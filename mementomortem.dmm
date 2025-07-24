@@ -12,7 +12,9 @@
 /obj/effect/landmark{
 	name = "Memento Mortem Exit"
 	},
-/turf/cordon,
+/turf/cordon{
+	density = 0
+	},
 /area/virtual_domain/fullbright{
 	base_lighting_alpha = 150;
 	name = "Memento Mortem"
@@ -27,6 +29,14 @@
 	},
 /area/virtual_domain/fullbright{
 	base_lighting_alpha = 150;
+	name = "Memento Mortem"
+	})
+"A" = (
+/turf/open/indestructible{
+	icon = null;
+	icon_state = null
+	},
+/area/virtual_domain/fullbright{
 	name = "Memento Mortem"
 	})
 "O" = (
@@ -232,7 +242,7 @@ a
 a
 a
 a
-a
+A
 a
 a
 a
