@@ -4,17 +4,20 @@
 	icon = null;
 	icon_state = null
 	},
-/area/space)
-"b" = (
-/turf/cordon,
-/area/space)
-"p" = (
+/area/virtual_domain/fullbright{
+	base_lighting_alpha = 150;
+	name = "Memento Mortem"
+	})
+"m" = (
 /obj/effect/landmark{
 	name = "Memento Mortem Exit"
 	},
 /turf/cordon,
-/area/space)
-"R" = (
+/area/virtual_domain/fullbright{
+	base_lighting_alpha = 150;
+	name = "Memento Mortem"
+	})
+"n" = (
 /obj/effect/landmark{
 	name = "Memento Mortem"
 	},
@@ -22,29 +25,38 @@
 	icon = null;
 	icon_state = null
 	},
-/area/space)
+/area/virtual_domain/fullbright{
+	base_lighting_alpha = 150;
+	name = "Memento Mortem"
+	})
+"O" = (
+/turf/cordon,
+/area/virtual_domain/fullbright{
+	base_lighting_alpha = 150;
+	name = "Memento Mortem"
+	})
 
 (1,1,1) = {"
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
 "}
 (2,1,1) = {"
-b
+O
 a
 a
 a
@@ -60,10 +72,10 @@ a
 a
 a
 a
-b
+O
 "}
 (3,1,1) = {"
-b
+O
 a
 a
 a
@@ -79,10 +91,10 @@ a
 a
 a
 a
-b
+O
 "}
 (4,1,1) = {"
-b
+O
 a
 a
 a
@@ -98,10 +110,10 @@ a
 a
 a
 a
-b
+O
 "}
 (5,1,1) = {"
-b
+O
 a
 a
 a
@@ -117,10 +129,10 @@ a
 a
 a
 a
-b
+O
 "}
 (6,1,1) = {"
-b
+O
 a
 a
 a
@@ -136,10 +148,10 @@ a
 a
 a
 a
-b
+O
 "}
 (7,1,1) = {"
-b
+O
 a
 a
 a
@@ -155,10 +167,10 @@ a
 a
 a
 a
-b
+O
 "}
 (8,1,1) = {"
-b
+O
 a
 a
 a
@@ -174,10 +186,10 @@ a
 a
 a
 a
-b
+O
 "}
 (9,1,1) = {"
-p
+m
 a
 a
 a
@@ -185,7 +197,7 @@ a
 a
 a
 a
-R
+n
 a
 a
 a
@@ -193,10 +205,10 @@ a
 a
 a
 a
-b
+O
 "}
 (10,1,1) = {"
-b
+O
 a
 a
 a
@@ -212,10 +224,10 @@ a
 a
 a
 a
-b
+O
 "}
 (11,1,1) = {"
-b
+O
 a
 a
 a
@@ -231,10 +243,10 @@ a
 a
 a
 a
-b
+O
 "}
 (12,1,1) = {"
-b
+O
 a
 a
 a
@@ -250,10 +262,10 @@ a
 a
 a
 a
-b
+O
 "}
 (13,1,1) = {"
-b
+O
 a
 a
 a
@@ -269,10 +281,10 @@ a
 a
 a
 a
-b
+O
 "}
 (14,1,1) = {"
-b
+O
 a
 a
 a
@@ -288,10 +300,10 @@ a
 a
 a
 a
-b
+O
 "}
 (15,1,1) = {"
-b
+O
 a
 a
 a
@@ -307,10 +319,10 @@ a
 a
 a
 a
-b
+O
 "}
 (16,1,1) = {"
-b
+O
 a
 a
 a
@@ -326,24 +338,24 @@ a
 a
 a
 a
-b
+O
 "}
 (17,1,1) = {"
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
-b
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
 "}
