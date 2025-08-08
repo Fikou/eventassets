@@ -97,8 +97,7 @@ local check_move = function(mob)
 	return hearing
 end
 
-local landmarks = list.copy(dm.global_vars.landmarks_list)
-for _, landmark in landmarks do
+for _, landmark in dm.global_vars.landmarks_list do
 	if landmark.name == "Memento Mortem" then
 		center_tile = get_turf(landmark)
 		for _, obj in center_tile.contents do
